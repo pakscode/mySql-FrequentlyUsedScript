@@ -1,0 +1,9 @@
+SELECT @@profiling;
+
+SET profiling = 1;
+
+DROP TABLE IF EXISTS t1;
+CREATE TABLE T1 (id INT);
+
+SHOW PROFILES;
+SHOW PROFILE;
